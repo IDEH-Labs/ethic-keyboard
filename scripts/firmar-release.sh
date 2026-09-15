@@ -10,15 +10,6 @@ build_tools="${BUILD_TOOLS_VERSION:-}"
 unsigned_apk="${UNSIGNED_APK:-$repo_root/app/build/outputs/apk/release/app-release-unsigned.apk}"
 output_apk="${SIGNED_APK:-$repo_root/app/build/outputs/apk/release/app-release.apk}"
 
-required_vars=(KEYSTORE_PATH KEY_ALIAS STORE_PASSWORD KEY_PASSWORD)
-for variable in "${required_vars[@]}"; do
-  [[ -n "${!variable:-}" ]] || {
-    printf 'ERROR: define la variable secreta %s solo en tu entorno local.\n' "$variable" >&2
-    exit 2
-  }
-done
-[[ -f "$unsigned_apk" ]] || { printf 'ERROR: no existe el APK release sin firmar: %s\n' "$unsigned_apk" >&2; exit 1; }
-[[ -f "$KEYSTORE_PATH" ]] || { printf 'ERROR: no existe el keystore indicado.\n' >&2; exit 1; }
 [[ -n "$sdk_root" ]] || { printf 'ERROR: define ANDROID_SDK_ROOT o ANDROID_HOME.\n' >&2; exit 2; }
 
 if [[ -z "$build_tools" ]]; then
@@ -27,6 +18,26 @@ fi
 zipalign="$sdk_root/build-tools/$build_tools/zipalign"
 apksigner="$sdk_root/build-tools/$build_tools/apksigner"
 [[ -x "$zipalign" && -x "$apksigner" ]] || { printf 'ERROR: faltan zipalign/apksigner en Build Tools %s.\n' "$build_tools" >&2; exit 1; }
+
+if [[ -f "$output_apk" && ( ! -f "$unsigned_apk" || "$output_apk" -nt "$unsigned_apk" ) ]]; then
+  "$apksigner" verify --verbose "$output_apk" >/dev/null
+  printf 'OK: APK release ya firmado y verificado: %s\n' "$output_apk"
+  exit 0
+fi
+
+[[ -f "$unsigned_apk" ]] || {
+  printf 'ERROR: no existe un APK release para firmar o verificar.\n' >&2
+  exit 1
+}
+
+required_vars=(KEYSTORE_PATH KEY_ALIAS STORE_PASSWORD KEY_PASSWORD)
+for variable in "${required_vars[@]}"; do
+  [[ -n "${!variable:-}" ]] || {
+    printf 'ERROR: define la variable secreta %s solo en tu entorno local.\n' "$variable" >&2
+    exit 2
+  }
+done
+[[ -f "$KEYSTORE_PATH" ]] || { printf 'ERROR: no existe el keystore indicado.\n' >&2; exit 1; }
 
 temp_aligned="$(mktemp --suffix=.aligned.apk)"
 trap 'rm -f "$temp_aligned"' EXIT
