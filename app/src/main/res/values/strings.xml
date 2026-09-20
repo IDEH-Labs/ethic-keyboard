@@ -142,4 +142,22 @@
     <string name="privacy_policy_summary">How Ethic Keyboard handles text, permissions, and local data</string>
     <string name="license">License</string>
     <string name="license_summary">Source code, attribution, and reuse terms</string>
+
+    <!-- Menu & Projects -->
+    <string name="menu_title">About us</string>
+    <string name="ecosystem_section">Projects</string>
+    <string name="ecosystem_desc">Sovereign, offline, privacy-first copyleft apps by jpi59.</string>
+    <string name="app_installed">Installed</string>
+    <string name="app_open">Open</string>
+    <string name="app_view">View</string>
+    <string name="open_source_section">Sovereignty &amp; Source Code</string>
+    <string name="github_repo_label">GitHub Repository</string>
+    <string name="gitlab_repo_label">GitLab Repository</string>
+    <string name="license_label">GNU GPLv3 License</string>
+    <string name="license_desc">Strict Copyleft. Free to run, study, share, and modify.</string>
+    <string name="technical_info_section">Technical Integrity</string>
+    <string name="package_id_label">Package ID</string>
+    <string name="key_fingerprint_label">Signer Certificate (SHA-256)</string>
+    <string name="keyboard_badge">0 Network Access · 100% Offline</string>
+    <string name="done">Done</string>
 </resources>

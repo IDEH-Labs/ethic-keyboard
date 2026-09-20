@@ -67,4 +67,22 @@
     <string name="show_language_switch_key">Mostrar tecla de cambio de idioma</string>
     <string name="pref_use_on_screen">Mostrar el teclado en pantalla</string>
     <string name="show_special_chars">Mostrar caracteres especiales</string>
+
+    <!-- Menú y Proyectos -->
+    <string name="menu_title">Acerca de nosotros</string>
+    <string name="ecosystem_section">Proyectos</string>
+    <string name="ecosystem_desc">Aplicaciones soberanas, 100% offline y de código libre copyleft creadas por jpi59.</string>
+    <string name="app_installed">Instalada</string>
+    <string name="app_open">Abrir</string>
+    <string name="app_view">Ver</string>
+    <string name="open_source_section">Soberanía y Código Abierto</string>
+    <string name="github_repo_label">Repositorio en GitHub</string>
+    <string name="gitlab_repo_label">Repositorio en GitLab</string>
+    <string name="license_label">Licencia GNU GPLv3</string>
+    <string name="license_desc">Copyleft estricto. Libertad total para usar, estudiar, compartir y modificar.</string>
+    <string name="technical_info_section">Integridad Técnica</string>
+    <string name="package_id_label">Identificador del paquete</string>
+    <string name="key_fingerprint_label">Certificado de firma (SHA-256)</string>
+    <string name="keyboard_badge">0 Conexión a Red · 100% Offline</string>
+    <string name="done">Listo</string>
 </resources>

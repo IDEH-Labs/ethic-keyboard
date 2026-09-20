@@ -31,6 +31,10 @@ import org.jpi59.teclado.R;
 import org.jpi59.teclado.latin.utils.ApplicationUtils;
 import org.jpi59.teclado.latin.utils.AppLocale;
 
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+
 public final class SettingsFragment extends InputMethodSettingsFragment {
     private static final String TAG = "SettingsFragment";
 
@@ -69,6 +73,23 @@ public final class SettingsFragment extends InputMethodSettingsFragment {
                 return true;
             }
         });
+    }
+
+    @Override
+    public void onCreateOptionsMenu(final Menu menu, final MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        final MenuItem item = menu.add(0, 1001, 0, R.string.menu_title);
+        item.setIcon(R.drawable.ic_settings_menu);
+        item.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(final MenuItem item) {
+        if (item.getItemId() == 1001) {
+            EthicEcosystemMenu.show(getActivity(), false);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void openUrl(String uri) {
