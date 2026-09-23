@@ -1,0 +1,1 @@
+Reforzados los metadatos de release para compilaciones reproducibles en F-Droid. Desactivados los metadatos integrados de control de versiones y dependencias en los artefactos de release.

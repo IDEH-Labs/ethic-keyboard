@@ -1,0 +1,1 @@
+Actualizados los enlaces canónicos al código fuente, política de privacidad y licencia tras renombrar el repositorio público. Sin cambios en el comportamiento del teclado, permisos ni tratamiento de datos.

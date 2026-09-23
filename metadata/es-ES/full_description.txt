@@ -1,0 +1,27 @@
+Este teclado está creado para quienes solo necesitan un teclado y nada más.
+
+Para habilitar el teclado:
+
+* Abre "Ethic Keyboard" desde el lanzador
+* Habilita Ethic Keyboard (se mostrará la advertencia predeterminada del sistema sobre seguimiento)
+* Cambia a Ethic Keyboard desde el método de entrada actual (varía según el teclado, usualmente manteniendo pulsado espacio)
+* Para editar los ajustes de Ethic Keyboard mantén pulsada la coma "," o abre Ajustes del sistema, Idiomas &amp; entrada, Ethic Keyboard.
+* Puedes habilitar/deshabilitar todos los métodos de entrada en Ajustes, Idiomas &amp; entrada, Administrar teclados (varía según el teléfono)
+
+<b>Características:</b>
+
+* Tamaño reducido (&lt;1MB)
+* Altura del teclado ajustable para mayor espacio en pantalla
+* Fila de números
+* Deslizar sobre espacio para mover el cursor
+* Deslizar para borrar
+* Colores de tema personalizados
+* Permisos mínimos (solo vibración)
+* Sin anuncios
+
+<b>Características que no tiene y probablemente nunca tendrá:</b>
+
+* Emojis
+* GIFs
+* Corrector ortográfico
+* Escritura por deslizamiento

@@ -262,7 +262,7 @@ public final class EthicEcosystemMenu {
         try {
             return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
         } catch (Exception ignored) {
-            return "6.6.5";
+            return "6.6.6";
         }
     }
 

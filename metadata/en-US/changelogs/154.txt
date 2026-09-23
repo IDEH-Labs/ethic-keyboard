@@ -1,0 +1,1 @@
+Added the Ethic sovereign projects menu. Fixed overflow hints in PIN keypad. Improved Gradle release signing handling.

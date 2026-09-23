@@ -1,0 +1,1 @@
+Eliminado el resolvedor de toolchains Foojay innecesario de la compilación. Añadida verificación SHA-256 para la distribución de Gradle utilizada por el wrapper.

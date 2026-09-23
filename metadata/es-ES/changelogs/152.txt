@@ -1,0 +1,1 @@
+Añadida selección opcional de idioma de visualización en los ajustes del teclado: español, inglés o el idioma del dispositivo.

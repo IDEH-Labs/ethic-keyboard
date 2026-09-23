@@ -1,0 +1,1 @@
+Desactivada la copia de seguridad automática de las preferencias del teclado. Ampliada la política de privacidad integrada con información sobre tratamiento de datos, retención, controles y contacto. Corregidos los enlaces de privacidad y licencia hacia el repositorio público.

@@ -6,7 +6,7 @@ Estado: **APK directa de producción publicada; F-Droid pendiente de revisión**
 
 - Nombre: Ethic Keyboard
 - Paquete Android: `org.jpi59.teclado`
-- Versión directa publicada: `6.6.5` (`versionCode 153`)
+- Versión directa publicada: `6.6.6` (`versionCode 154`)
 - Licencia del conjunto: GNU GPLv3 o posterior; se conservan los avisos Apache 2.0 heredados.
 - Política de privacidad integrada: `PRIVACY_JPI59.md`, accesible desde los ajustes de la aplicación.
 
@@ -17,9 +17,9 @@ Estado: **APK directa de producción publicada; F-Droid pendiente de revisión**
 - El respaldo automático y las solicitudes de copia de seguridad del sistema están desactivados.
 - La compilación release produce el artefacto sin firmar que se conserva solo
   localmente antes de la firma.
-- La APK directa `6.6.5` fue alineada, firmada y verificada con `apksigner`.
+- La APK directa `6.6.6` fue alineada, firmada y verificada con `apksigner`.
   Su checksum SHA-256 y la huella SHA-256 del certificado aparecen en el
-  [release público](https://github.com/jpi59/ethic-keyboard/releases/tag/v6.6.5).
+  [release público](https://github.com/jpi59/ethic-keyboard/releases/tag/v6.6.6).
 - La APK de producción se instaló y verificó en un dispositivo antes de su
   publicación.
 - Los scripts de privacidad y licencias pasan en este entorno.

@@ -20,8 +20,8 @@ Feature it doesn't have and probably will never have:
 
 ## Distribución
 
-La versión `6.6.5` (`versionCode 153`) tiene una [APK de producción firmada y
-su checksum SHA-256](https://github.com/jpi59/ethic-keyboard/releases/tag/v6.6.5)
+La versión `6.6.6` (`versionCode 154`) tiene una [APK de producción firmada y
+su checksum SHA-256](https://github.com/jpi59/ethic-keyboard/releases/tag/v6.6.6)
 publicados en GitHub. Consulta la [ficha de distribución](DISTRIBUCION.md), la
 [política de privacidad](docs/privacy.html) y [RELEASE.md](RELEASE.md).
 

@@ -1,0 +1,1 @@
+Añadido el menú de proyectos soberanos de Ethic. Corregidas las pistas desbordadas en el teclado PIN. Mejorada la gestión de firma de release en Gradle.

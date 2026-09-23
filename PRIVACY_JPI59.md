@@ -1,7 +1,7 @@
 # Política de privacidad — Ethic Keyboard
 
 Última actualización: 12 de septiembre de 2026
-Aplicable a: Ethic Keyboard 6.6.5 (`org.jpi59.teclado`)
+Aplicable a: Ethic Keyboard 6.6.6 (`org.jpi59.teclado`)
 
 ## Responsable y contacto
 
@@ -13,7 +13,7 @@ relacionadas con privacidad, utiliza el [gestor público de incidencias](https:/
 
 Un teclado de Android recibe el texto, la selección y la información del campo
 activo que Android y la aplicación receptora le entregan para poder escribir. En
-la versión 6.6.5, Ethic Keyboard procesa esos datos en memoria durante la sesión
+la versión 6.6.6, Ethic Keyboard procesa esos datos en memoria durante la sesión
 de entrada y los entrega a la aplicación en la que el usuario está escribiendo.
 No guarda, perfila, vende, comparte ni transmite ese texto a servidores de jpi59
 ni a terceros.
