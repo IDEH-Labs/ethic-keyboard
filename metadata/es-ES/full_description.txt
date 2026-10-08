@@ -1,12 +1,17 @@
-Este teclado está creado para quienes solo necesitan un teclado y nada más.
+Ethic Keyboard es un teclado soberano, offline y centrado en la privacidad, diseñado para quienes buscan un método de entrada rápido y limpio sin telemetría ni elementos superfluos.
+
+Basado en Simple Keyboard y AOSP LatinIME bajo GPL-3.0-or-later, Ethic Keyboard incorpora:
+* Idioma de interfaz por aplicación independiente del sistema operativo.
+* Menú de proyectos integrado con el ecosistema de apps soberanas de IDEH Labs (Ethic Tuner, Ethic Notes, Ethic Compass, Ethic QR Scanner, Ethic APK Guard y Ethic One Call).
+* Cero permisos de internet (solo vibración para respuesta háptica), garantizando que las pulsaciones jamás salgan del dispositivo.
+* Auditoría de privacidad y compilaciones reproducibles.
 
 Para habilitar el teclado:
 
 * Abre "Ethic Keyboard" desde el lanzador
-* Habilita Ethic Keyboard (se mostrará la advertencia predeterminada del sistema sobre seguimiento)
-* Cambia a Ethic Keyboard desde el método de entrada actual (varía según el teclado, usualmente manteniendo pulsado espacio)
-* Para editar los ajustes de Ethic Keyboard mantén pulsada la coma "," o abre Ajustes del sistema, Idiomas &amp; entrada, Ethic Keyboard.
-* Puedes habilitar/deshabilitar todos los métodos de entrada en Ajustes, Idiomas &amp; entrada, Administrar teclados (varía según el teléfono)
+* Habilita Ethic Keyboard en los ajustes del sistema
+* Cambia a Ethic Keyboard desde el método de entrada actual
+* Para editar los ajustes, mantén pulsada la coma "," o abre Ajustes del sistema &gt; Idiomas &amp; entrada &gt; Ethic Keyboard.
 
 <b>Características:</b>
 
@@ -19,9 +24,9 @@ Para habilitar el teclado:
 * Permisos mínimos (solo vibración)
 * Sin anuncios
 
-<b>Características que no tiene y probablemente nunca tendrá:</b>
+<b>Características que no tiene y nunca tendrá:</b>
 
-* Emojis
-* GIFs
-* Corrector ortográfico
+* Emojis y GIFs
+* Corrector ortográfico o registro de diccionario
 * Escritura por deslizamiento
+* Sincronización en la nube o telemetría

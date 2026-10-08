@@ -146,7 +146,7 @@
     <!-- Menu & Projects -->
     <string name="menu_title">About us</string>
     <string name="ecosystem_section">Projects</string>
-    <string name="ecosystem_desc">Sovereign, offline, privacy-first copyleft apps by jpi59.</string>
+    <string name="ecosystem_desc">Sovereign, offline, privacy-first copyleft apps by IDEH Labs.</string>
     <string name="app_installed">Installed</string>
     <string name="app_open">Open</string>
     <string name="app_view">View</string>
@@ -159,5 +159,6 @@
     <string name="package_id_label">Package ID</string>
     <string name="key_fingerprint_label">Signer Certificate (SHA-256)</string>
     <string name="keyboard_badge">0 Network Access · 100% Offline</string>
+    <string name="not_available">Not available</string>
     <string name="done">Done</string>
 </resources>

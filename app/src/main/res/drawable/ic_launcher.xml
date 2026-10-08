@@ -1,42 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2025 Raimondas Rimkus
-     Copyright (C) 2026 jpi59 (Ethic Keyboard visual adaptation)
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="28dp"
-    android:height="28dp"
-    android:viewportWidth="28"
-    android:viewportHeight="28">
+    xmlns:aapt="http://schemas.android.com/apk/res-auto"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M54,4A50,50 0,1 0,54,104A50,50 0,1 0,54,4">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="15"
+                android:startY="15"
+                android:endX="95"
+                android:endY="95"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#A78BFA" />
+                <item android:offset="1.0" android:color="#7C3AED" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Keyboard Chassis -->
     <path
-        android:fillColor="#102A43"
-        android:pathData="M2,2 26,2 26,26 2,26 z"/>
-    <group
-        android:translateX="5"
-        android:translateY="5">
-        <path
-            android:fillColor="#2BAE9F"
-            android:strokeColor="#2BAE9F"
-            android:strokeWidth="3"
-            android:strokeLineJoin="round"
-            android:pathData="M1,1 17,1 17,5 1,5 z"/>
-        <path
-            android:fillColor="#D9E2EC"
-            android:strokeColor="#D9E2EC"
-            android:strokeWidth="1"
-            android:strokeLineJoin="round"
-            android:pathData="@string/icon_launcher_keys"/>
-    </group>
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,34 L84,34 A8,8 0,0 1,92 42 L92,66 A8,8 0,0 1,84 74 L24,74 A8,8 0,0 1,16 66 L16,42 A8,8 0,0 1,24 34 Z" />
+    <!-- Row 1 Keycaps -->
+    <path
+        android:fillColor="#DDD6FE"
+        android:pathData="M22,39h9v7h-9z M35,39h9v7h-9z M48,39h9v7h-9z M61,39h9v7h-9z M74,39h12v7h-12z" />
+    <!-- Row 2 Keycaps -->
+    <path
+        android:fillColor="#DDD6FE"
+        android:pathData="M24,50h9v7h-9z M37,50h9v7h-9z M50,50h9v7h-9z M63,50h9v7h-9z M76,50h8v7h-8z" />
+    <!-- Row 3: Spacebar & Actions -->
+    <path
+        android:fillColor="#DDD6FE"
+        android:pathData="M22,61h11v7h-11z M75,61h11v7h-11z" />
+    <path
+        android:fillColor="#8B5CF6"
+        android:pathData="M37,61h34v7h-34z" />
 </vector>

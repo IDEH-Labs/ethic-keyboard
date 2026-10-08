@@ -1,1 +1,1 @@
-An app for those who only need a keyboard and nothing more
+Sovereign, lightweight offline keyboard with per-app UI language and zero telemetry.

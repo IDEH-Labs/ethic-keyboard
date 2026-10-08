@@ -35,13 +35,13 @@ import java.util.Locale;
 public final class EthicEcosystemMenu {
 
     private static final String[][] ALL_ECOSYSTEM_APPS = {
-            {"Ethic Tuner", "org.jpi59.ethictuner", "Afinador cromático de máxima precisión", "Ultra-precise chromatic tuner", "https://github.com/jpi59/ethic-tuner"},
-            {"Ethic Notes", "org.jpi59.ethicnotes", "Gestor de notas seguro y 100% privado", "Ultra-secure, zero-permission private notes manager", "https://github.com/jpi59/ethic-notes"},
-            {"Ethic Compass", "org.jpi59.ethiccompass", "Brújula offline de sensores puros", "Offline pure sensor compass", "https://github.com/jpi59/ethic-compass"},
-            {"Ethic QR Scanner", "org.jpi59.ethicqrscanner", "Lector QR sin rastreadores", "Tracker-free QR reader", "https://github.com/jpi59/ethic-qr-scanner"},
-            {"Ethic Keyboard", "org.jpi59.teclado", "Teclado privado sin conexión a red", "Private offline keyboard", "https://github.com/jpi59/ethic-keyboard"},
-            {"Ethic APK Guard", "org.jpi59.ethicupdatesafe", "Instalador y verificador seguro de APKs", "Secure APK analyzer and installer", "https://github.com/jpi59/ethic-apk-guard"},
-            {"Ethic One Call", "org.jpi59.ethichandoff", "Gestor ético de llamadas de emergencia", "Ethical emergency call handoff", "https://github.com/jpi59/ethic-one-call"}
+            {"Ethic Tuner", "org.jpi59.ethictuner", "Afinador cromático de máxima precisión", "Ultra-precise chromatic tuner", "https://github.com/IDEH-Labs/ethic-tuner"},
+            {"Ethic Notes", "org.jpi59.ethicnotes", "Gestor de notas seguro y 100% privado", "Ultra-secure, zero-permission private notes manager", "https://github.com/IDEH-Labs/ethic-notes"},
+            {"Ethic Compass", "org.jpi59.ethiccompass", "Brújula offline de sensores puros", "Offline pure sensor compass", "https://github.com/IDEH-Labs/ethic-compass"},
+            {"Ethic QR Scanner", "org.jpi59.ethicqrscanner", "Lector QR sin rastreadores", "Tracker-free QR reader", "https://github.com/IDEH-Labs/ethic-qr-scanner"},
+            {"Ethic Keyboard", "org.jpi59.teclado", "Teclado privado sin conexión a red", "Private offline keyboard", "https://github.com/IDEH-Labs/ethic-keyboard"},
+            {"Ethic APK Guard", "org.jpi59.ethicupdatesafe", "Instalador y verificador seguro de APKs", "Secure APK analyzer and installer", "https://github.com/IDEH-Labs/ethic-apk-guard"},
+            {"Ethic One Call", "org.jpi59.ethichandoff", "Gestor ético de llamadas de emergencia", "Ethical emergency call handoff", "https://github.com/IDEH-Labs/ethic-one-call"}
     };
 
     public static void show(Activity activity, boolean darkMode) {
@@ -184,18 +184,18 @@ public final class EthicEcosystemMenu {
                 activity,
                 R.drawable.ic_code,
                 activity.getString(R.string.github_repo_label),
-                "github.com/jpi59/ethic-keyboard",
+                "github.com/IDEH-Labs/ethic-keyboard",
                 ink, muted, action,
-                v -> activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/jpi59/ethic-keyboard")))
+                v -> activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/IDEH-Labs/ethic-keyboard")))
         ));
         repoCard.addView(createDivider(activity, cardStroke));
         repoCard.addView(createActionRow(
                 activity,
                 R.drawable.ic_code,
                 activity.getString(R.string.gitlab_repo_label),
-                "gitlab.com/jpi59/ethic-keyboard",
+                "gitlab.com/ideh-labs/ethic-keyboard",
                 ink, muted, action,
-                v -> activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://gitlab.com/jpi59/ethic-keyboard")))
+                v -> activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://gitlab.com/ideh-labs/ethic-keyboard")))
         ));
         repoCard.addView(createDivider(activity, cardStroke));
         repoCard.addView(createActionRow(
@@ -239,7 +239,11 @@ public final class EthicEcosystemMenu {
     public static void showLicenseDialog(Activity activity, boolean darkMode, int action, int surface) {
         AlertDialog d = new AlertDialog.Builder(activity)
                 .setTitle(R.string.license_label)
-                .setMessage("Ethic Keyboard · Copyright (C) 2026 jpi59\n\n" +
+                .setMessage("Ethic Keyboard · Copyright (C) 2026 IDEH Labs / jpi59 (GPL-3.0-or-later)\n\n" +
+                        "Based on Simple Keyboard & AOSP LatinIME:\n" +
+                        "Copyright (C) 2018-2024 Raimondas Rimkus\n" +
+                        "Copyright (C) 2008-2016 The Android Open Source Project\n" +
+                        "Licensed under the Apache License, Version 2.0.\n\n" +
                         "This program is free software: you can redistribute it and/or modify " +
                         "it under the terms of the GNU General Public License as published by " +
                         "the Free Software Foundation, either version 3 of the License, or " +
@@ -289,7 +293,7 @@ public final class EthicEcosystemMenu {
                 return sb.toString();
             }
         } catch (Exception ignored) { }
-        return "No disponible";
+        return context.getString(R.string.not_available);
     }
 
     private static TextView createSectionHeader(Context ctx, String text, int color) {

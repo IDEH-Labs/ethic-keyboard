@@ -18,6 +18,16 @@
 
     <uses-permission android:name="android.permission.VIBRATE" />
 
+        <queries>
+        <package android:name="org.jpi59.ethicnotes" />
+        <package android:name="org.jpi59.ethiccompass" />
+        <package android:name="org.jpi59.ethicqrscanner" />
+        <package android:name="org.jpi59.teclado" />
+        <package android:name="org.jpi59.ethictuner" />
+        <package android:name="org.jpi59.ethicupdatesafe" />
+        <package android:name="org.jpi59.ethichandoff" />
+        <package android:name="org.senda.browser" />
+    </queries>
     <application
         android:allowBackup="false"
         android:fullBackupOnly="true"

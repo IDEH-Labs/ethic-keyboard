@@ -1,1 +1,1 @@
-Un teclado para quienes solo necesitan un teclado y nada más
+Teclado soberano, ligero y offline con selector de idioma y cero telemetría.

@@ -60,7 +60,7 @@ Referencias:
 1. Mantener fuera del historial público los recursos binarios de licencia incierta; el árbol de distribución actual ya los retiró.
 2. Repetir la comparación de recursos contra upstream y actualizar `PROCEDENCIA-RECURSOS.md` con cada cambio.
 3. Documentar o retirar cualquier recurso futuro cuya licencia, fuente o contribución no pueda verificarse.
-4. Mantener Apache 2.0 para esta adaptación mientras no exista una razón técnica y jurídica documentada para relicenciar.
+4. Mantener la obra combinada bajo GNU GPLv3 o posterior, preservando todos los avisos y condiciones de Apache 2.0 para el código heredado de AOSP y Simple Keyboard.
 5. Revisar el contenido final del repositorio público para asegurar que no contiene datos personales, tokens, claves o rutas privadas.
 6. Publicar la política de privacidad en una URL accesible sin autenticación; `docs/privacy.html` queda preparada para GitHub Pages.
 
@@ -73,7 +73,7 @@ La revisión técnica de código, permisos y documentación está preparada. Sig
 **Licencia adoptada para la obra combinada: GNU GPLv3-or-later.**
 **Licencia conservada para código heredado: Apache License 2.0.**
 **Estado de publicación: condicionado.**  
-**GPLv3: posible como estrategia futura, pendiente de auditoría de combinación y avisos.**  
+**GPLv3: adoptada formalmente para la obra combinada (LICENSE), respetando los avisos de Apache 2.0 (NOTICE.md).**  
 **AGPLv3: no recomendada para esta aplicación local.**
 
 Este documento es una auditoría técnica de procedencia y compatibilidad, no asesoramiento jurídico profesional.

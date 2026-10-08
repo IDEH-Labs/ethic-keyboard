@@ -1,12 +1,17 @@
-This keyboard is created for those who only need a keyboard and nothing more.
+Ethic Keyboard is a sovereign, privacy-focused offline keyboard designed for users who need a clean, responsive input method without telemetry or bloat.
+
+Based on Simple Keyboard and AOSP LatinIME under GPL-3.0-or-later, Ethic Keyboard adds:
+* Per-app UI language override, allowing users to configure the keyboard settings language independently of system locale.
+* Integrated Projects browser connecting you with companion sovereign, offline, copyleft apps in the IDEH ecosystem (Ethic Tuner, Ethic Notes, Ethic Compass, Ethic QR Scanner, Ethic APK Guard, and Ethic One Call).
+* Zero internet permission (uses only Vibrate for haptic feedback), ensuring typed text never leaves the device.
+* Hardened reproducible builds and privacy auditing.
 
 To enable the keyboard:
 
 * Open "Ethic Keyboard" from your launcher
-* Enable the Ethic Keyboard (default system warning about tracking will be shown)
-* Switch to Ethic Keyboard from current Input Method (differs between keyboards, usually long-press space)
-* To edit Ethic Keyboard settings long-press "," or open system Settings, Languages &amp; Input, Ethic Keyboard.
-* You can enable/disable all the input methods in Settings, Languages &amp; Input, Manage Keyboards (differs between phones)
+* Enable Ethic Keyboard in system settings
+* Switch to Ethic Keyboard from your current input method
+* To edit Ethic Keyboard settings, long-press "," or open system Settings &gt; Languages &amp; Input &gt; Ethic Keyboard.
 
 <b>Features:</b>
 
@@ -19,9 +24,9 @@ To enable the keyboard:
 * Minimal permissions (only Vibrate)
 * Ads-free
 
-<b>Features it doesn’t have and probably will never have:</b>
+<b>Features it doesn’t have and will not have:</b>
 
-* Emojis
-* GIFs
-* Spell checker
+* Emojis and GIFs
+* Spell checker / dictionary keylogging
 * Swipe typing
+* Cloud synchronization or telemetry

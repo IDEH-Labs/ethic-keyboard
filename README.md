@@ -18,29 +18,18 @@ Feature it doesn't have and probably will never have:
 - Spell checker
 - Swipe typing
 
-## Distribución
+## Distribution
 
-La versión `6.6.6` (`versionCode 154`) tiene una [APK de producción firmada y
-su checksum SHA-256](https://github.com/jpi59/ethic-keyboard/releases/tag/v6.6.6)
-publicados en GitHub. Consulta la [ficha de distribución](DISTRIBUCION.md), la
-[política de privacidad](docs/privacy.html) y [RELEASE.md](RELEASE.md).
+Version `6.6.6` (`versionCode 154`) has a [signed production APK and its SHA-256 checksum](https://github.com/IDEH-Labs/ethic-keyboard/releases/tag/v6.6.6) published on GitHub. See the [distribution notes](DISTRIBUCION.md), the [privacy policy](docs/privacy.html), and [RELEASE.md](RELEASE.md).
 
-La propuesta para F-Droid está en revisión y no debe presentarse como disponible
-en su catálogo hasta que sus mantenedores la acepten. F-Droid compilará y firmará
-su propio artefacto desde el código fuente; ese paquete tendrá una firma distinta
-de la APK directa.
+The proposal for F-Droid is currently under review and must not be described as available in its catalog until maintainers merge it. F-Droid builds and signs its own artifact from source code; that package will carry a different signature from direct release APKs.
 
 ## Credits
 
-## Licencia
+Based on AOSP LatinIME and the upstream Simple Keyboard project. This is not an official application of those projects. Provenance and modifications are documented in `NOTICE.md`.
 
-La obra combinada de Ethic Keyboard se distribuye bajo **GNU General Public License
-v3.0 o posterior** (`LICENSE`). El código heredado de AOSP y Simple Keyboard
-conserva además sus avisos y condiciones de **Apache License 2.0**, disponible en
-`LICENSE-APACHE-2.0`.
+## License
 
-Las imágenes, iconos y otros recursos de terceros mantienen la licencia que les
-corresponda; consulta `NOTICE.md` y `AUDITORIA-LICENCIAS-ETHIC-KEYBOARD.md` antes
-de redistribuirlos.
+The combined work of Ethic Keyboard is distributed under the **GNU General Public License v3.0 or later** (`LICENSE`). Code inherited from AOSP and Simple Keyboard also retains its notices and conditions under the **Apache License 2.0**, available in `LICENSE-APACHE-2.0`.
 
-Esta aplicación está basada en AOSP LatinIME y en el proyecto upstream Simple Keyboard. No es una aplicación oficial de esos proyectos. El origen y las modificaciones se documentan en `NOTICE.md`.
+Third-party images, icons, and assets retain their respective licenses; consult `NOTICE.md` before redistribution.
