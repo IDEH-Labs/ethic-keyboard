@@ -7,7 +7,7 @@ Aplicable a: Ethic Keyboard 6.6.6 (`org.jpi59.teclado`)
 
 El responsable de esta versión es **jpi59**, mantenedor identificado en el
 repositorio público de Ethic Keyboard. Para consultas, incidencias o solicitudes
-relacionadas con privacidad, utiliza el [gestor público de incidencias](https://github.com/jpi59/ethic-keyboard/issues).
+relacionadas con privacidad, utiliza el [gestor público de incidencias](https://github.com/IDEH-Labs/ethic-keyboard/issues).
 
 ## Datos que procesa el teclado
 

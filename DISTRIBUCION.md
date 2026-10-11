@@ -19,7 +19,7 @@ Estado: **APK directa de producción publicada; F-Droid pendiente de revisión**
   localmente antes de la firma.
 - La APK directa `6.6.6` fue alineada, firmada y verificada con `apksigner`.
   Su checksum SHA-256 y la huella SHA-256 del certificado aparecen en el
-  [release público](https://github.com/jpi59/ethic-keyboard/releases/tag/v6.6.6).
+  [release público](https://github.com/IDEH-Labs/ethic-keyboard/releases/tag/v6.6.6).
 - La APK de producción se instaló y verificó en un dispositivo antes de su
   publicación.
 - Los scripts de privacidad y licencias pasan en este entorno.
