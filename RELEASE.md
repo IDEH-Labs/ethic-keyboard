@@ -1,37 +1,35 @@
-# Preparación de una entrega release
+# Preparing a release
 
-Sin credenciales, la compilación release genera estos artefactos:
+Without credentials, the release build produces these artifacts:
 
 ```text
 app/build/outputs/apk/release/app-release-unsigned.apk
 app/build/outputs/bundle/release/app-release.aab
 ```
 
-La clave privada debe ser creada, respaldada y custodiada por el titular del proyecto; nunca debe entrar en Git, `local.properties` ni una variable persistente del repositorio.
+The private key must be created, backed up and kept by the project owner; it must never enter Git,
+`local.properties` or a persistent variable of the repository.
 
-## Firma local
+## Local signing
 
-Define las variables solo en la sesión local **antes de compilar**:
+Set the variables only in the local session, **before building** (load your Android SDK environment first):
 
 ```bash
-source /home/Familia/Proyectos/jpi59/entorno-android-jpi59.sh
-export KEYSTORE_PATH="/ruta/privada/ethic-keyboard-release.jks"
+export KEYSTORE_PATH="/private/path/ethic-keyboard-release.jks"
 export KEY_ALIAS="ethic-keyboard"
-export STORE_PASSWORD='contraseña-del-keystore'
-export KEY_PASSWORD='contraseña-de-la-clave'
+export STORE_PASSWORD='keystore-password'
+export KEY_PASSWORD='key-password'
 ./gradlew :app:assembleRelease :app:bundleRelease --no-daemon
 ./scripts/firmar-release.sh
 ```
 
-Con las cuatro variables definidas, Gradle firma el APK y el AAB con la misma
-clave; `scripts/firmar-release.sh` detecta ese APK y verifica su firma. Si el APK
-fue compilado sin credenciales y existe el artefacto sin firma, el script lo
-alinea, firma y verifica. Las contraseñas no se escriben en archivos del
-repositorio ni en los registros de CI.
+With the four variables set, Gradle signs the APK and the AAB with the same key; `scripts/firmar-release.sh` finds
+that APK and verifies its signature. If the APK was built without credentials and the unsigned artifact exists, the
+script aligns, signs and verifies it. Passwords are never written to files of the repository or to CI logs.
 
-Google Play requiere el AAB y Play App Signing. Al registrar una aplicación que
-ya se distribuyó con `org.jpi59.teclado`, se debe inscribir la clave de firma
-existente para que las actualizaciones conserven compatibilidad con la APK ya
-instalada.
+Google Play requires the AAB and Play App Signing. When registering an app already distributed as
+`org.jpi59.teclado`, the existing signing key must be enrolled so that updates stay compatible with the installed APK.
 
-Antes de publicar, registra de forma privada la huella SHA-256 del certificado, prueba instalación/actualización en un dispositivo y conserva una copia de seguridad del keystore. Perder la clave impedirá actualizar la aplicación con el mismo paquete.
+Before publishing, record the SHA-256 fingerprint of the certificate privately, test installing and updating on a
+device, and keep a backup of the keystore. Losing the key makes it impossible to update the app under the same
+package.

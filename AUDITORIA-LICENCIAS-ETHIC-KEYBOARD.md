@@ -1,79 +1,92 @@
-# Auditoría de licencias y procedencia — Ethic Keyboard
+# License and provenance audit — Ethic Keyboard
 
-Fecha de revisión: 2026-09-07  
-Alcance: árbol Git local en `master`, commit vigente y configuración de compilación.
+Review date: 2026-09-07 (translated into English and its status updated on 2026-10-11)
+Scope: the Git tree, the current commit and the build configuration.
 
-## Conclusión ejecutiva
+## Executive summary
 
-**Resultado: GPLv3 técnicamente adoptada para la obra combinada, condicionada para publicación pública.** La base de código permite una distribución GPLv3 porque el material Apache 2.0 es compatible con GPLv3, siempre que se conserven los avisos y se completen las verificaciones de los recursos binarios.
+**Result: GNU GPL version 3 or later adopted for the combined work.** The code base allows distribution under GPLv3 or
+later because Apache 2.0 material is compatible with GPLv3, as long as its notices are kept.
 
-La procedencia técnica de los recursos actuales fue comparada con el commit upstream declarado y se registró en `PROCEDENCIA-RECURSOS.md`. Las aportaciones visuales atribuidas a jpi59 siguen siendo una declaración del mantenedor; esta auditoría no aporta una prueba externa de autoría ni sustituye una revisión jurídica.
+The technical provenance of the current resources was compared with the declared upstream commit and recorded in
+`PROCEDENCIA-RECURSOS.md`. The visual contributions attributed to jpi59 remain a statement by the maintainer; this
+audit does not provide external proof of authorship and does not replace a legal review.
 
-## Hechos comprobados
+## Verified facts
 
-- El repositorio contiene la licencia completa GPLv3 en `LICENSE` y Apache License 2.0 en `LICENSE-APACHE-2.0`.
-- `NOTICE.md` identifica el proyecto base `rkkr/simple-keyboard`, el commit base auditado y la herencia de AOSP LatinIME.
-- Los archivos Java y la mayoría de recursos heredados contienen avisos Apache 2.0 y copyright de AOSP y/o colaboradores del proyecto base.
-- El proyecto no tiene dependencias de ejecución declaradas en `app/build.gradle`.
-- El plugin de Android y Gradle son herramientas de compilación; no se empaquetan como dependencias de la aplicación.
-- El manifiesto declara únicamente `android.permission.VIBRATE`; no declara permiso de Internet.
-- Los cambios propios identificados son marca, namespace/paquete, textos, ajustes de transparencia y documentación.
-- `local.properties` está excluido por `.gitignore` y no forma parte de la distribución.
-- Se añadieron avisos de copyright de jpi59 a los dos recursos XML modificados en esta auditoría.
+- The repository contains the full GPLv3 text in `LICENSE` and the Apache License 2.0 in `LICENSE-APACHE-2.0`.
+- `NOTICE.md` identifies the base project `rkkr/simple-keyboard`, the audited base commit and the AOSP LatinIME
+  heritage.
+- The Java files and most inherited resources carry Apache 2.0 notices and copyrights of AOSP and/or contributors to the
+  base project.
+- The project declares no runtime dependencies in `app/build.gradle`.
+- The Android Gradle plugin and Gradle are build tools; they are not packaged as app dependencies.
+- The manifest declares only `android.permission.VIBRATE`; it declares no Internet permission.
+- The identified own changes are the brand, namespace/package, texts, transparency settings and documentation.
+- `local.properties` is excluded by `.gitignore` and is not part of the distribution.
+- jpi59 copyright notices were added to the two XML resources modified during this audit.
 
-## Procedencia y obligaciones
+## Provenance and obligations
 
-### Código AOSP/Simple Keyboard
+### AOSP / Simple Keyboard code
 
-Debe conservarse cada aviso de copyright y licencia de los archivos derivados, junto con una copia de Apache 2.0 y los avisos de `NOTICE.md`. Los archivos modificados deben indicar que fueron cambiados. La referencia upstream utilizada es:
+Every copyright and license notice of the derived files must be kept, together with a copy of Apache 2.0 and the
+notices in `NOTICE.md`. Modified files must state that they were changed. Upstream references:
 
 - https://github.com/rkkr/simple-keyboard
 - https://github.com/rkkr/simple-keyboard/blob/master/LICENSE
 - https://source.android.com/docs/setup/contribute/licenses
 
-### Cambios de jpi59
+### jpi59's changes
 
-Las modificaciones originales de jpi59 pueden publicarse bajo Apache 2.0. Esto no convierte el código heredado en una obra cuyo copyright pertenezca exclusivamente a jpi59; las atribuciones existentes deben permanecer.
+jpi59's original modifications are licensed under GPLv3 or later within the combined work. This does not make the
+inherited code a work whose copyright belongs exclusively to jpi59; the existing attributions must remain.
 
-### Recursos binarios y gráficos
+### Binary and graphic resources
 
-`icons/icon.svg`, `icons/ic_launcher-playstore.png` y la adaptación de los vectores Android son contribuciones visuales de jpi59, documentadas en `NOTICE.md`. Las capturas y el recurso promocional heredados sin licencia individual cerrada fueron retirados del árbol actual. Sus objetos permanecen en la historia Git privada; el repositorio público debe usar el historial limpio de distribución.
+`icons/icon.svg`, `icons/ic_launcher-playstore.png` and the adaptation of the Android vectors are visual contributions
+by jpi59, documented in `NOTICE.md`. Inherited screenshots and the promotional asset without a confirmed individual
+license were removed from the tree, and the public repository uses a clean distribution history that does not contain
+them.
 
-Algunos vectores XML no tienen encabezado de licencia visible. La comparación byte a byte contra el commit upstream documentada en `PROCEDENCIA-RECURSOS.md` confirma su procedencia técnica cuando no difieren; los que difieren están inventariados como derivados o aportaciones declaradas. Debe repetirse esa comparación al incorporar recursos nuevos.
+Some XML vectors have no visible license header. The byte-for-byte comparison against the upstream commit documented in
+`PROCEDENCIA-RECURSOS.md` confirms their technical provenance when they do not differ; the ones that differ are listed
+as derived works or declared contributions. The comparison must be repeated whenever new resources are added.
 
-## Compatibilidad de relicenciamiento
+## Relicensing compatibility
 
-- Apache 2.0 es una licencia libre y permite modificaciones, distribución y uso comercial, sujeto a sus avisos y condiciones.
-- Apache 2.0 es compatible con GPLv3 en el sentido indicado por la ASF y la FSF; eso no autoriza borrar los avisos Apache ni cambiar unilateralmente el copyright de terceros.
-- Las contribuciones originales de jpi59 pueden licenciarse bajo GPLv3-or-later, pero el conjunto requiere un análisis archivo por archivo y una estrategia de avisos clara.
-- No se recomienda declarar todo el repositorio como AGPLv3 sin una auditoría de compatibilidad específica. El teclado es una aplicación local, no un servicio de red, y AGPL no aporta una ventaja proporcional aquí.
-- No es ético ni jurídicamente correcto sustituir `LICENSE` por GPL/AGPL como si todo el código fuera de jpi59.
+- Apache 2.0 is a free license and allows modification, distribution and commercial use, subject to its notices and
+  conditions.
+- Apache 2.0 is compatible with GPLv3 as stated by the ASF and the FSF; that does not allow removing Apache notices or
+  unilaterally changing third parties' copyright.
+- jpi59's original contributions are licensed under GPLv3 or later; inherited files keep their Apache notices.
+- Licensing the whole repository under the AGPLv3 is not recommended: the keyboard is a local app, not a network
+  service, and the AGPL brings no proportional advantage here.
+- It is neither ethical nor legally correct to present `LICENSE` as if all the code were jpi59's.
 
-Referencias:
+References:
 
 - https://www.apache.org/licenses/GPL-compatibility
 - https://www.gnu.org/licenses/license-compatibility.en.html
 - https://www.gnu.org/licenses/license-list.en.html
 
-## Acciones necesarias antes de hacer público el repositorio
+## Ongoing obligations
 
-1. Mantener fuera del historial público los recursos binarios de licencia incierta; el árbol de distribución actual ya los retiró.
-2. Repetir la comparación de recursos contra upstream y actualizar `PROCEDENCIA-RECURSOS.md` con cada cambio.
-3. Documentar o retirar cualquier recurso futuro cuya licencia, fuente o contribución no pueda verificarse.
-4. Mantener la obra combinada bajo GNU GPLv3 o posterior, preservando todos los avisos y condiciones de Apache 2.0 para el código heredado de AOSP y Simple Keyboard.
-5. Revisar el contenido final del repositorio público para asegurar que no contiene datos personales, tokens, claves o rutas privadas.
-6. Publicar la política de privacidad en una URL accesible sin autenticación; `docs/privacy.html` queda preparada para GitHub Pages.
+1. Keep binary resources of uncertain license out of the public history.
+2. Repeat the comparison of resources against upstream and update `PROCEDENCIA-RECURSOS.md` with every change.
+3. Document or remove any future resource whose license, source or contribution cannot be verified.
+4. Keep the combined work under the GNU GPL version 3 or later, preserving all Apache 2.0 notices and conditions of
+   the code inherited from AOSP and Simple Keyboard.
+5. Check that the public repository contains no personal data, tokens, keys or private paths.
+6. Keep the privacy policy at a URL reachable without signing in.
 
-## Estado de la entrega
+## Release status (October 11, 2026)
 
-La revisión técnica de código, permisos y documentación está preparada. Sigue siendo incorrecto afirmar que la aplicación está publicada hasta firmar el APK con la clave del titular, comprobar la firma y hacer público el repositorio limpio. Este documento no constituye asesoramiento jurídico profesional.
+Version 6.6.6 is published on GitHub as a signed APK with its checksum, and F-Droid accepted its recipe on October 9,
+2026. This document is a technical audit of provenance and compatibility, not professional legal advice.
 
-## Dictamen provisional
+## Conclusion
 
-**Licencia adoptada para la obra combinada: GNU GPLv3-or-later.**
-**Licencia conservada para código heredado: Apache License 2.0.**
-**Estado de publicación: condicionado.**  
-**GPLv3: adoptada formalmente para la obra combinada (LICENSE), respetando los avisos de Apache 2.0 (NOTICE.md).**  
-**AGPLv3: no recomendada para esta aplicación local.**
-
-Este documento es una auditoría técnica de procedencia y compatibilidad, no asesoramiento jurídico profesional.
+**License of the combined work: GNU GPL version 3 or later.**
+**License kept for inherited code: Apache License 2.0, with its notices (`NOTICE.md`).**
+**AGPLv3: not recommended for this local app.**

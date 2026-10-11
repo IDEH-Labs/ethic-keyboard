@@ -43,11 +43,11 @@ if grep -Fq 'ethic-keyboard-public' "$app_strings"; then
   exit 1
 fi
 
-grep -Fq 'gestor público de incidencias' "$privacy_policy" || {
+grep -Fq 'public issue tracker' "$privacy_policy" || {
   printf 'ERROR: falta el mecanismo de contacto de privacidad.\n' >&2
   exit 1
 }
-grep -Fq 'hasta que el usuario las cambia, borra los datos de la' "$privacy_policy" || {
+grep -Fq 'the user changes them, clears the app' "$privacy_policy" || {
   printf 'ERROR: falta describir la retención de preferencias locales.\n' >&2
   exit 1
 }

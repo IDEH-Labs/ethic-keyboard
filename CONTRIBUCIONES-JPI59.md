@@ -1,63 +1,80 @@
-# Contribuciones propias y política de licencias
+# Own contributions and license policy
 
-Fecha: 2026-09-07  
-Base de comparación: `ae49483ce31fc030ac20a96c37f34aaef2f78957`  
-Proyecto: Ethic Keyboard (`jpi59`)
+Date: 2026-09-07 (translated into English on 2026-10-11)
+Comparison base: `ae49483ce31fc030ac20a96c37f34aaef2f78957`
+Project: Ethic Keyboard (`jpi59`)
 
-## Regla de atribución
+## Attribution rule
 
-Este repositorio es una obra derivada. La comparación con el commit base identifica qué cambios se hicieron en jpi59, pero no convierte el código heredado en código de jpi59. Los avisos de AOSP, Simple Keyboard y demás colaboradores siguen aplicándose a los archivos derivados.
+This repository is a derivative work. The comparison with the base commit identifies which changes jpi59 made, but it
+does not turn inherited code into jpi59's code. The notices of AOSP, Simple Keyboard and other contributors still apply
+to the derived files.
 
-## Archivos y materiales creados principalmente por jpi59
+## Files and material created mainly by jpi59
 
-Estos elementos son documentación, automatización o configuración del proyecto jpi59 y no sustituyen la licencia del código heredado:
+These items are documentation, automation or configuration of the project and do not replace the license of the
+inherited code:
 
-- `.github/workflows/ci.yml` — integración continua y comprobación de privacidad.
-- `scripts/verificar-privacidad.sh` — comprobación reproducible del manifiesto y del APK.
-- `PRIVACY_JPI59.md` — política del producto jpi59.
-- `AUDITORIA-LICENCIAS-ETHIC-KEYBOARD.md` — informe de auditoría.
-- `CONTRIBUCIONES-JPI59.md` — este inventario.
-- `RELEASE.md` y `scripts/firmar-release.sh` — preparación de firma reproducible sin secretos.
-- `NOTICE.md` — documentación de procedencia y atribuciones, con contenido heredado identificado.
-- Cambios propios de `README.md`, `metadata/` y configuración de compilación.
+- `.github/workflows/ci.yml` — continuous integration and privacy check.
+- `scripts/verificar-privacidad.sh` — reproducible check of the manifest and the APK.
+- `PRIVACY_JPI59.md` — the product's privacy policy.
+- `AUDITORIA-LICENCIAS-ETHIC-KEYBOARD.md` — audit report.
+- `CONTRIBUCIONES-JPI59.md` — this inventory.
+- `RELEASE.md` and `scripts/firmar-release.sh` — preparation of reproducible signing without secrets.
+- `NOTICE.md` — provenance and attribution documentation, with inherited content identified.
+- Own changes to `README.md`, `metadata/` and build configuration.
 
-Licencia adoptada para el contenido original de jpi59 dentro de la obra combinada: **GNU GPLv3 o posterior**. El código heredado conserva Apache 2.0 y sus avisos; `LICENSE-APACHE-2.0` se incluye por separado.
+License adopted for jpi59's original content within the combined work: **GNU GPL version 3 or any later version**.
+Inherited code keeps Apache 2.0 and its notices; `LICENSE-APACHE-2.0` is included separately.
 
-## Archivos derivados o mixtos
+## Derived or mixed files
 
-### Código Java
+### Java code
 
-Los archivos bajo `app/src/main/java/org/jpi59/teclado/` son renombrados y adaptados desde `app/src/main/java/rkr/simplekeyboard/inputmethod/`. La comparación Git registra renombres con similitud aproximada del 71–99 %. Son archivos mixtos: contienen código heredado y cambios de namespace, identidad o adaptación. Deben conservar Apache 2.0 y sus avisos originales; las aportaciones nuevas de jpi59 se identifican en los commits y no se separan como si fueran obras independientes.
+The files under `app/src/main/java/org/jpi59/teclado/` are renamed and adapted from
+`app/src/main/java/rkr/simplekeyboard/inputmethod/`. Git records the renames with a similarity of roughly 71–99 %. They
+are mixed files: they contain inherited code plus namespace, identity or adaptation changes. They must keep Apache 2.0
+and their original notices; jpi59's new contributions are identified in the commits and are not split out as if they
+were independent works.
 
-### Recursos XML
+### XML resources
 
-Los recursos bajo `app/src/main/res/` conservan la procedencia AOSP/upstream. Los cambios de jpi59 incluyen identidad visual, textos, nombre de aplicación, enlaces de documentación y la sección `Transparency` de ajustes. Los archivos XML modificados directamente por jpi59 llevan un aviso adicional cuando corresponde.
+The resources under `app/src/main/res/` keep their AOSP/upstream provenance. jpi59's changes include the visual
+identity, texts, app name, documentation links and the `Transparency` section of the settings. XML files modified
+directly by jpi59 carry an additional notice where appropriate.
 
-### Configuración y distribución
+### Configuration and distribution
 
-`app/build.gradle`, `app/proguard-rules.pro`, `gradlew`, `gradlew.bat`, `gradle/wrapper/` y `gradle.properties` contienen cambios de construcción o reproducibilidad. Son herramientas/configuración; no constituyen una relicencia del código de la aplicación. El wrapper debe conservar las condiciones de su distribución upstream.
+`app/build.gradle`, `app/proguard-rules.pro`, `gradlew`, `gradlew.bat`, `gradle/wrapper/` and `gradle.properties`
+contain build or reproducibility changes. They are tools and configuration; they are not a relicensing of the app's
+code. The wrapper must keep the conditions of its upstream distribution.
 
-### Imágenes e iconos
+### Images and icons
 
-`icons/icon.svg`, `icons/ic_launcher-playstore.png` y la adaptación de los vectores Android son recursos gráficos originales/adaptados por jpi59. Las capturas y el recurso promocional heredados sin ficha individual cerrada se retiraron del árbol actual; sus objetos siguen en el historial Git privado y deben purgarse antes de hacer público el historial completo.
+`icons/icon.svg`, `icons/ic_launcher-playstore.png` and the adaptation of the Android vectors are graphic resources
+created or adapted by jpi59. Inherited screenshots and the promotional asset without a confirmed individual record were
+removed from the tree; the public repository uses a clean history that does not contain them.
 
-## Cambios propios por commit
+## Own changes by commit
 
-| Commit | Contribución | Clasificación |
+These commits belong to the private development history from which the clean public history was prepared; their
+hashes are not present in the public repository.
+
+| Commit | Contribution | Classification |
 |---|---|---|
-| `ed9f55b2` | adaptación de namespace/paquete, configuración, documentación y políticas | mixta: derivada + jpi59 |
-| `984ef684` | wrapper reproducible, CI y comprobación de privacidad | principalmente jpi59/configuración |
-| `852b3613` | marca Ethic Keyboard y textos en recursos/metadatos | mixta: recursos heredados modificados |
-| `558351c1` | sección Transparency y resúmenes de privacidad/licencia | jpi59 sobre XML heredado |
-| `e4ed405f` | enlaces a la rama `master` | jpi59 sobre recurso heredado |
-| `a70f676d` | auditoría, avisos de copyright y documentación | principalmente jpi59 |
+| `ed9f55b2` | namespace/package adaptation, configuration, documentation and policies | mixed: derived + jpi59 |
+| `984ef684` | reproducible wrapper, CI and privacy check | mainly jpi59 / configuration |
+| `852b3613` | Ethic Keyboard brand and texts in resources and metadata | mixed: modified inherited resources |
+| `558351c1` | Transparency section and privacy/license summaries | jpi59 on inherited XML |
+| `e4ed405f` | links to the `master` branch | jpi59 on an inherited resource |
+| `a70f676d` | audit, copyright notices and documentation | mainly jpi59 |
 
-## Cómo debe publicarse
+## How it must be published
 
-1. Distribuir `LICENSE` y `NOTICE.md` junto al código y al APK cuando corresponda.
-2. No eliminar avisos de copyright ni atribuciones de archivos heredados.
-3. Declarar los cambios de jpi59 sin afirmar autoría exclusiva sobre AOSP/Simple Keyboard.
-4. Aplicar GPLv3-or-later a la obra combinada sin borrar ni sustituir los avisos Apache de los archivos heredados.
-5. Completar la ficha de recursos gráficos antes de hacer una publicación pública definitiva.
+1. Distribute `LICENSE` and `NOTICE.md` with the code and with the APK where applicable.
+2. Do not remove copyright notices or attributions from inherited files.
+3. State jpi59's changes without claiming exclusive authorship of AOSP or Simple Keyboard.
+4. Apply GPLv3-or-later to the combined work without removing or replacing the Apache notices of inherited files.
+5. Record every new graphic resource before a public release.
 
-Este inventario es una documentación técnica de autoría y procedencia; no sustituye asesoramiento jurídico profesional.
+This inventory is technical documentation of authorship and provenance; it is not professional legal advice.

@@ -1,62 +1,56 @@
-# Ficha final de distribución — Ethic Keyboard
+# Distribution record — Ethic Keyboard
 
-Estado: **APK directa de producción publicada; F-Droid pendiente de revisión**.
+Status: **production APK published on GitHub; accepted into F-Droid's metadata on October 9, 2026, waiting for
+F-Droid to build and publish it**.
 
-## Identidad
+## Identity
 
-- Nombre: Ethic Keyboard
-- Paquete Android: `org.jpi59.teclado`
-- Versión directa publicada: `6.6.6` (`versionCode 154`)
-- Licencia del conjunto: GNU GPLv3 o posterior; se conservan los avisos Apache 2.0 heredados.
-- Política de privacidad integrada: `PRIVACY_JPI59.md`, accesible desde los ajustes de la aplicación.
+- Name: Ethic Keyboard
+- Android package: `org.jpi59.teclado`
+- Published version: `6.6.6` (`versionCode 154`)
+- License of the combined work: GNU GPL version 3 or any later version; the inherited Apache 2.0 notices are kept.
+- Built-in privacy policy: `PRIVACY_JPI59.md`, reachable from the app's settings.
 
-## Qué se ha comprobado
+## What has been checked
 
-- El código no declara permisos de red ni dependencias de anuncios o telemetría.
-- El manifiesto declara únicamente `VIBRATE` como permiso normal.
-- El respaldo automático y las solicitudes de copia de seguridad del sistema están desactivados.
-- La compilación release produce el artefacto sin firmar que se conserva solo
-  localmente antes de la firma.
-- La APK directa `6.6.6` fue alineada, firmada y verificada con `apksigner`.
-  Su checksum SHA-256 y la huella SHA-256 del certificado aparecen en el
-  [release público](https://github.com/IDEH-Labs/ethic-keyboard/releases/tag/v6.6.6).
-- La APK de producción se instaló y verificó en un dispositivo antes de su
-  publicación.
-- Los scripts de privacidad y licencias pasan en este entorno.
-- El árbol actual no contiene las capturas ni el recurso promocional de licencia incierta.
+- The code declares no network permission and no advertising or telemetry dependency.
+- The manifest declares only `VIBRATE` as a normal permission.
+- Automatic backup and system backup requests are turned off.
+- The release build produces an unsigned artifact that stays local until it is signed.
+- The direct `6.6.6` APK was aligned, signed and verified with `apksigner`. Its SHA-256 checksum and the SHA-256
+  fingerprint of its certificate are in the
+  [public release](https://github.com/IDEH-Labs/ethic-keyboard/releases/tag/v6.6.6).
+- The production APK was installed and checked on a device before it was published.
+- The privacy and license scripts pass.
+- The current tree does not contain the screenshots or the promotional asset of uncertain license.
 
-## Estado por canal
+## Status by channel
 
-- **GitHub:** publicado el código etiquetado, la APK firmada y su checksum. La
-  nota del release identifica el certificado y el comando de verificación.
-- **F-Droid:** la receta está propuesta y su CI ha sido correcta, pero la
-  incorporación depende de una revisión humana externa. No hay disponibilidad
-  en el catálogo mientras la solicitud siga abierta.
-- **Google Play:** no se ha publicado ni se debe afirmar disponibilidad. Antes
-  de usar ese canal se requiere un AAB, Play App Signing con la clave existente
-  y declaraciones verificadas de ficha, clasificación y Data safety.
+- **GitHub:** the tagged code, the signed APK and its checksum are published. The release note identifies the
+  certificate and the verification command.
+- **F-Droid:** the recipe was accepted (merge request !48454, October 9, 2026). The app appears in the catalog once
+  F-Droid builds and publishes it.
+- **Google Play:** not published, and availability must not be claimed. Using that channel requires an AAB, Play App
+  Signing with the existing key, and verified store listing, rating and Data safety declarations.
 
-## Compatibilidad entre canales
+## Compatibility between channels
 
-La APK directa de Ethic Keyboard se firma con la clave del titular. F-Droid firma
-por defecto sus APK compiladas desde fuente con su propia clave. Por ello, una
-instalación directa no se puede actualizar sobre una versión firmada por F-Droid
-sin desinstalar primero la aplicación, lo que borra sus preferencias locales.
-La ficha de F-Droid debe explicar esta migración antes de ser aceptada. Google
-Play debe usar la clave de firma existente mediante Play App Signing para evitar
-ese problema con instalaciones directas.
+The direct APK is signed with the owner's key. The F-Droid recipe uses reproducible builds (`Binaries` and
+`AllowedAPKSigningKeys`): F-Droid builds the source, checks that the result matches the published APK and distributes
+the APK signed by the developer. F-Droid and direct installations can therefore update each other. Google Play must
+use the existing signing key through Play App Signing to keep that compatibility.
 
-## Comandos de verificación
+## Verification commands
 
 ```bash
 ./gradlew :app:assembleRelease --no-daemon
 ./scripts/verificar-licencias.sh
 ./scripts/verificar-privacidad.sh app/build/outputs/apk/release/app-release-unsigned.apk
-export KEYSTORE_PATH="/ruta/privada/ethic-keyboard-release.jks"
+export KEYSTORE_PATH="/private/path/ethic-keyboard-release.jks"
 export KEY_ALIAS="ethic-keyboard"
 export STORE_PASSWORD='...'
 export KEY_PASSWORD='...'
 ./scripts/firmar-release.sh
 ```
 
-No se debe publicar el APK sin firma ni incluir contraseñas, keystore o rutas privadas en Git.
+An unsigned APK must not be published, and passwords, keystores or private paths must never be committed to Git.

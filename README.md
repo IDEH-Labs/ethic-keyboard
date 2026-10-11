@@ -22,7 +22,7 @@ Feature it doesn't have and probably will never have:
 
 Version `6.6.6` (`versionCode 154`) has a [signed production APK and its SHA-256 checksum](https://github.com/IDEH-Labs/ethic-keyboard/releases/tag/v6.6.6) published on GitHub. See the [distribution notes](DISTRIBUCION.md), the [privacy policy](docs/privacy.html), and [RELEASE.md](RELEASE.md).
 
-F-Droid accepted Ethic Keyboard into its metadata repository on October 9, 2026; it appears in the F-Droid catalog once F-Droid builds and publishes it. F-Droid builds and signs its own APK from the source code, so its signature differs from the APKs published on GitHub: an F-Droid installation cannot be updated with a GitHub APK, or the other way round.
+F-Droid accepted Ethic Keyboard into its metadata repository on October 9, 2026; it appears in the F-Droid catalog once F-Droid builds and publishes it. F-Droid builds the source, checks that the result matches the published APK (reproducible build) and distributes the APK signed by the developer, so F-Droid and GitHub installations can update each other.
 
 ## Credits
 

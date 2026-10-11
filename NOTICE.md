@@ -1,14 +1,21 @@
-# Avisos y procedencia — Ethic Keyboard
+# Notices and provenance — Ethic Keyboard
 
-Esta aplicación es una adaptación independiente y no oficial.
+This application is an independent, unofficial adaptation.
 
-- Proyecto base: Simple Keyboard, https://github.com/rkkr/simple-keyboard
-- Commit base auditado: `ae49483ce31fc030ac20a96c37f34aaef2f78957`
-- Licencia del proyecto base: Apache License 2.0, conservada en `LICENSE-APACHE-2.0`.
-- Componentes heredados de Android Open Source Project (AOSP) LatinIME: conservan los avisos Apache-2.0 presentes en cada archivo.
-- La obra combinada de Ethic Keyboard se distribuye bajo GNU GPLv3 o posterior, en `LICENSE`.
-- Las modificaciones originales de jpi59 se ofrecen bajo GPLv3 o posterior dentro de la obra combinada; el código heredado conserva Apache 2.0 y sus avisos.
+- Base project: Simple Keyboard, https://github.com/rkkr/simple-keyboard
+- Audited base commit: `ae49483ce31fc030ac20a96c37f34aaef2f78957`
+- License of the base project: Apache License 2.0, kept in `LICENSE-APACHE-2.0`.
+- Components inherited from the Android Open Source Project (AOSP) LatinIME keep the Apache-2.0 notices present in
+  each file.
+- The combined work, Ethic Keyboard, is distributed under the GNU GPL version 3 or (at your option) any later version,
+  in `LICENSE`.
+- jpi59's original modifications are offered under GPLv3 or later within the combined work; inherited code keeps
+  Apache 2.0 and its notices.
 
-La separación detallada entre contenido heredado, archivos mixtos y contribuciones originales de jpi59 está en `CONTRIBUCIONES-JPI59.md`. La comparación reproducible de recursos contra el commit upstream y el inventario de los que difieren están en `PROCEDENCIA-RECURSOS.md`.
+The detailed separation between inherited content, mixed files and jpi59's original contributions is in
+`CONTRIBUCIONES-JPI59.md`. The reproducible comparison of resources against the upstream commit, and the inventory of
+the ones that differ, are in `PROCEDENCIA-RECURSOS.md`.
 
-El nuevo símbolo de teclado de `icons/icon.svg`, su PNG regenerado y la adaptación de los vectores Android son contribuciones visuales de jpi59. Las capturas y el recurso promocional heredados sin licencia individual cerrada se retiraron de la versión actual. La publicación pública debe usar el historial limpio preparado para distribución, no el historial privado que conserva esos objetos.
+The new keyboard symbol in `icons/icon.svg`, its regenerated PNG and the adaptation of the Android vectors are visual
+contributions by jpi59. Inherited screenshots and the promotional asset without a confirmed individual license were
+removed from the current version. The public repository uses a clean distribution history that does not contain them.

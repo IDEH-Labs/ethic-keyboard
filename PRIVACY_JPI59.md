@@ -1,64 +1,53 @@
-# Política de privacidad — Ethic Keyboard
+# Privacy policy — Ethic Keyboard
 
-Última actualización: 12 de septiembre de 2026
-Aplicable a: Ethic Keyboard 6.6.6 (`org.jpi59.teclado`)
+Last updated: October 11, 2026 (translated into English; the practices are unchanged since September 12, 2026)
+Applies to: Ethic Keyboard 6.6.6 (`org.jpi59.teclado`)
 
-## Responsable y contacto
+## Controller and contact
 
-El responsable de esta versión es **jpi59**, mantenedor identificado en el
-repositorio público de Ethic Keyboard. Para consultas, incidencias o solicitudes
-relacionadas con privacidad, utiliza el [gestor público de incidencias](https://github.com/IDEH-Labs/ethic-keyboard/issues).
+The controller for this version is **jpi59** (IDEH Labs), the maintainer identified in the public Ethic Keyboard
+repository. For questions, issues or requests about privacy, use the
+[public issue tracker](https://github.com/IDEH-Labs/ethic-keyboard/issues).
 
-## Datos que procesa el teclado
+## Data the keyboard processes
 
-Un teclado de Android recibe el texto, la selección y la información del campo
-activo que Android y la aplicación receptora le entregan para poder escribir. En
-la versión 6.6.6, Ethic Keyboard procesa esos datos en memoria durante la sesión
-de entrada y los entrega a la aplicación en la que el usuario está escribiendo.
-No guarda, perfila, vende, comparte ni transmite ese texto a servidores de jpi59
-ni a terceros.
+An Android keyboard receives the text, the selection and the information about the active field that Android and the
+receiving app give it so that the person can type. In version 6.6.6, Ethic Keyboard processes that data in memory
+during the input session and passes it to the app where the user is typing. It does not store, profile, sell, share
+or transmit that text to servers of jpi59 or of third parties.
 
-Cuando el usuario pulsa la acción de pegar, el teclado puede leer el texto del
-portapapeles del sistema para insertarlo donde el usuario lo ha solicitado. No
-crea una copia persistente del portapapeles ni lo transmite.
+When the user taps the paste action, the keyboard can read the text in the system clipboard to insert it where the
+user asked. It does not create a persistent copy of the clipboard and does not transmit it.
 
-## Preferencias locales y retención
+## Local preferences and retention
 
-La aplicación conserva en el almacenamiento privado del dispositivo las
-preferencias necesarias para funcionar, como idiomas o distribuciones activas,
-tema, tamaño y opciones de vibración. No se diseñan para contener el texto que
-se escribe. Permanecen hasta que el usuario las cambia, borra los datos de la
-aplicación desde Ajustes de Android o desinstala la aplicación.
+The app keeps, in the device's private storage, the preferences it needs to work, such as active languages or
+layouts, theme, size and vibration options. They are not designed to contain the text that is typed. They remain until
+the user changes them, clears the app's data from Android's Settings or uninstalls the app.
 
-La aplicación desactiva sus copias de seguridad en la nube mediante
-`android:allowBackup="false"` y no solicita copias de seguridad. Algunos
-fabricantes pueden conservar transferencias de dispositivo a dispositivo como
-parte de la migración del sistema; esa función depende del sistema operativo y
-no es un servicio de Ethic Keyboard.
+The app turns off its cloud backups with `android:allowBackup="false"` and does not request backups. Some
+manufacturers may keep device-to-device transfers as part of the system migration; that feature depends on the
+operating system and is not a service of Ethic Keyboard.
 
-## Red, compartición y permisos
+## Network, sharing and permissions
 
-Ethic Keyboard no declara permiso de Internet ni integra anuncios, analítica,
-telemetría, rastreadores ni servicios de red. Por tanto, no recoge ni comparte
-datos fuera del dispositivo mediante la aplicación.
+Ethic Keyboard declares no Internet permission and includes no ads, analytics, telemetry, trackers or network
+services. Therefore it does not collect or share data outside the device through the app.
 
-El único permiso normal declarado es `VIBRATE`, utilizado para la respuesta
-háptica y configurable por el usuario. `BIND_INPUT_METHOD` es el permiso que
-Android exige a un servicio de teclado; no concede acceso a Internet.
+The only normal permission declared is `VIBRATE`, used for haptic feedback and configurable by the user.
+`BIND_INPUT_METHOD` is the permission Android requires of a keyboard service; it does not grant Internet access.
 
-La aplicación no ofrece cuentas, perfiles ni sincronización propios. No hay
-cuentas ni datos de cuenta que eliminar en servidores de Ethic Keyboard.
+The app offers no accounts, profiles or synchronization of its own. There are no accounts or account data to delete
+on servers of Ethic Keyboard.
 
-## Seguridad y tus controles
+## Security and your controls
 
-El código fuente está disponible para revisión pública. Puedes dejar de usar el
-teclado, desactivarlo desde los ajustes de métodos de entrada o borrar sus datos
-desde los Ajustes de Android. Borrar los datos elimina las preferencias locales y
-restaura la configuración inicial del teclado.
+The source code is available for public review. You can stop using the keyboard, turn it off in the input method
+settings or clear its data in Android's Settings. Clearing the data deletes the local preferences and restores the
+keyboard's initial settings.
 
-## Cambios de esta política
+## Changes to this policy
 
-Si una versión futura cambia estas prácticas, esta política se actualizará antes
-de distribuir esa versión, indicando la fecha y el cambio realizado. La URL de
-esta política se mantiene accesible desde los ajustes de la aplicación y debe
-coincidir con las declaraciones de la tienda donde se distribuya.
+If a future version changes these practices, this policy will be updated before that version is distributed, stating
+the date and the change. The URL of this policy remains reachable from the app's settings and must match the
+statements of any store where the app is distributed.
