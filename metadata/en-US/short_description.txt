@@ -1,1 +1,1 @@
-Sovereign, lightweight offline keyboard with per-app UI language and zero telemetry.
+Sovereign, lightweight offline keyboard with zero telemetry.
