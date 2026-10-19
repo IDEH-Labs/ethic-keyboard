@@ -13,8 +13,8 @@ android {
         compileSdk 36
         minSdkVersion 24
         targetSdkVersion 36
-        versionCode 154
-        versionName "6.6.6"
+        versionCode 155
+        versionName "6.6.7"
     }
     dependenciesInfo {
         includeInApk = false
