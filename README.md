@@ -33,3 +33,8 @@ Based on AOSP LatinIME and the upstream Simple Keyboard project. This is not an 
 The combined work of Ethic Keyboard is distributed under the **GNU General Public License v3.0 or later** (`LICENSE`). Code inherited from AOSP and Simple Keyboard also retains its notices and conditions under the **Apache License 2.0**, available in `LICENSE-APACHE-2.0`.
 
 Third-party images, icons, and assets retain their respective licenses; consult `NOTICE.md` before redistribution.
+
+
+---
+
+An **[IDEH Labs](https://codeberg.org/IDEH-Labs)** project · [Codeberg](https://codeberg.org/IDEH-Labs/ethic-keyboard)
