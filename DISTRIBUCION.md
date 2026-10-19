@@ -26,8 +26,8 @@ F-Droid to build and publish it**.
 
 ## Status by channel
 
-- **GitHub:** the tagged code, the signed APK and its checksum are published. The release note identifies the
-  certificate and the verification command.
+- **Codeberg:** source code, tags, and releases synchronized under [IDEH-Labs/ethic-keyboard](https://codeberg.org/IDEH-Labs/ethic-keyboard).
+- **GitHub:** the tagged code, the signed APK and its checksum are published at [GitHub Releases](https://github.com/IDEH-Labs/ethic-keyboard/releases).
 - **F-Droid:** the recipe was accepted (merge request !48454, October 9, 2026). The app appears in the catalog once
   F-Droid builds and publishes it.
 - **Google Play:** not published, and availability must not be claimed. Using that channel requires an AAB, Play App
